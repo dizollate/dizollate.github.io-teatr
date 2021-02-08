@@ -1,0 +1,277 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+
+html, body {
+margin:0;
+padding:0;
+}
+html {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 15px;
+}
+
+.main {
+	width: 100%;
+	height: 100vh;
+	margin: 0;
+	background: url('C:/Kostya/Web/Portfolio/img/first_back.png');
+	background-size: cover;
+	display: flex;
+
+
+}
+
+.main__block {
+	max-width: 80%;
+	margin: 0 auto;
+	padding-top: 50px;
+
+}
+
+.main__block__header ul li a {
+font-family: Open Sans Condensed;
+font-style: normal;
+font-size: 18px;
+line-height: 25px;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+text-decoration: none;
+color: #FFFFFF;
+}
+
+.main__block__header ul li {
+	list-style-type: none;
+	margin-right: 3vw;
+}
+
+.main__block__header ul {
+	padding: 0;
+	display: flex;
+}
+
+.main__block__header {	
+	display: flex;
+	margin: 0 auto;
+	justify-content: space-between;
+}
+
+.main__block__header__number {
+font-family: Open Sans Condensed;
+font-style: normal;
+font-size: 16px;
+
+letter-spacing: 0.05em;
+text-transform: uppercase;
+color: #FFFFFF;
+  border-bottom: 2px solid #D1A954;
+  display: inline-block;
+
+}
+
+.main__block__header__number a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.main__block__bottom {
+	padding-top: 190px;
+	display: flex;
+	justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 1130px) { 
+ .main__block__bottom {
+		
+	 	flex-direction: column-reverse;
+ }
+ .main__block__title {
+ 	margin: auto;
+ 	text-align: center;
+ }
+ .main__block__photo {
+ 	margin-left: 28%;
+ }
+}
+
+.main__block__title {
+	padding-top: 110px;
+	max-width: 540px;
+}
+
+.main__block__title__t {
+font-family: Open Sans Condensed;
+font-style: normal;
+font-weight: bold;
+font-size: 64px;
+line-height: 87px;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+color: #FFFFFF;
+margin-bottom: 50px;
+}
+
+.main__block__title__txt {
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 150%;
+color: #FFFFFF;
+margin-bottom: 50px;
+}
+
+.main__block__title__button button {
+	cursor: pointer;
+	width: 160px;
+	height: 50px;
+	background: #D1A954;
+	border: none;
+	font-family: Open Sans Condensed;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 25px;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+
+/* white */
+
+color: #FFFFFF;
+}
+
+.main__block__photo {
+	display: flex;
+	width: 35%;
+	background-image: url(C:/Kostya/Web/Portfolio/img/banner.png);
+}
+
+
+.main__left {
+
+width: 10%;
+height: 100vh;
+left: 0px;
+top: 0px;
+background: rgba(51, 51, 51, 0.75);
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+
+
+}
+.main__left__info {
+	position: relative;
+	padding: 0;
+font-family: Open Sans Condensed;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 25px;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+color: #C4C4C4;
+writing-mode: vertical-lr;;
+display: flex;
+}
+
+.main__left__info span {
+	margin: auto;
+	transform: rotate(180deg);
+}
+
+.main__left__poloca {
+	background-color: #C4C4C4;
+border: 3px solid #C4C4C4;
+transform: rotate(90deg);
+}
+
+.main__left__soc {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	text-align: center;
+	height: 175px;
+}
